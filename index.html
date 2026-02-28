@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chico Azevedo | Brega Romântico</title>
+
+    <style>
+        :root {
+            --azul-principal: #0d6efd;
+            --azul-claro: #e9f2ff;
+            --cinza-texto: #444;
+            --cinza-claro: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: white;
+            color: var(--cinza-texto);
+            line-height: 1.7;
+        }
+
+        /* HERO */
+        header {
+            background: linear-gradient(135deg, #0d6efd, #5aa9ff);
+            color: white;
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.2em;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            max-width: 720px;
+            margin: auto;
+            opacity: 0.95;
+        }
+
+        /* MENU */
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 15px;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--azul-principal);
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* SEÇÕES */
+        section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.4em;
+            margin-bottom: 50px;
+            color: var(--azul-principal);
+        }
+
+        /* SOBRE */
+        .sobre p {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+        .card iframe {
+            width: 100%;
+            height: 280px;
+            border: none;
+        }
+
+        /* AGENDA */
+        .agenda {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .agenda-item {
+            background-color: var(--azul-claro);
+            border-left: 6px solid var(--azul-principal);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .agenda-item strong {
+            color: var(--azul-principal);
+            font-size: 1.1em;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--cinza-claro);
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="Gemini_Generated_Image_jifhcyjifhcyjifh2.png" alt="Chico Azevedo" width="70%"/> 
+    <p>Cantor e compositor de brega romântico, levando amor, nostalgia e emoção através da música.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#fotos">Fotos</a></li>
+        <li><a href="#videos">Vídeos</a></li>
+        <li><a href="#agenda">Apresentações</a></li>
+    </ul>
+</nav>
+
+<section id="sobre" class="sobre">
+    <h2>Sobre</h2>
+    <p>
+        Chico Azevedo é cantor e compositor, apaixonado pela Música Popular Brasileira e pela fusão de ritmos
+        que traduzem sentimentos e histórias do cotidiano.
+        <br><br>
+        Atualmente, dedica-se ao brega romântico, um estilo que resgata memórias afetivas, desperta a nostalgia
+        e enche os corações de amor, emoção e saudade, através de letras marcantes e melodias envolventes.
+    </p>
+</section>
+
+<section id="fotos">
+    <h2>Fotos</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://via.placeholder.com/500x350?text=Foto+1" alt="Chico Azevedo">
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/500x350?text=Foto+2" alt="Chico Azevedo">
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/500x350?text=Foto+3" alt="Chico Azevedo">
+        </div>
+    </div>
+</section>
+
+<section id="videos">
+    <h2>Vídeos</h2>
+    <div class="cards">
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+        </div>
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<section id="agenda">
+    <h2>Apresentações</h2>
+    <div class="agenda">
+        <div class="agenda-item">
+            <strong>15/03/2026</strong><br>
+            Bar do Coração Partido – Aracaju/SE
+        </div>
+        <div class="agenda-item">
+            <strong>22/03/2026</strong><br>
+            Festa Popular do Bairro – Riachuelo/SE
+        </div>
+        <div class="agenda-item">
+            <strong>05/04/2026</strong><br>
+            Evento Privado
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Chico Azevedo • Todos os direitos reservados
+</footer>
+
+</body>
+</html>
